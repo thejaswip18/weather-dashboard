@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  
+
+}
+
+.weather-dashboard {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  border-radius: 10px;
+  color: #000;
+}
+
+.search{
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+}
+
+.weather{
+  /* border:  2px solid red;   */
+  height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.weather-details{
+  /* border: 2px solid yellow; */
+  height: inherit;
+  width: 60%;
+}
+
+.favorite{
+  height: 475px;
+  width: 37%;
+  background: #607d8b;
+  border-radius: 10px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 10px;
+  flex-direction: column;
+  gap: 30px;
+  overflow: hidden;
+  box-shadow: 3px 3px 10px 3px inset #161616;
+}
+
+.search-bar {
+  padding: 10px;
+  width: 50%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  
+}
+
+
+
+.weather-info {
+  /* border: 2px solid red; */
+  width: 40%;
+  height: 300px;
+  /* margin-top: 20px; */
+  padding: 10px;
+}
+
+.favorite-list {
+  margin-top: 20px;
+  list-style: none;
+  padding: 10px;
+}
+
+button {
+  cursor: pointer;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #263238;
+  height: 40px;
+  width: 150px;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+button:hover{
+  background-color: transparent;
+  border: 2px solid #263238;
+  color: #263238;
+}
+
+.toggle-button {
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .weather-dashboard {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+}
+
+.favorite button{
+  margin-top: 20px;
+}
